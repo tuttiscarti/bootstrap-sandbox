@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../assets/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="../assets/css/breakpoints.css" />
+    <title>2220-accordion-collapse | Bootstrap Sandbox</title>
+  </head>
+  <body>
+    <div class="container">
+      <h1 class="mb-3">2220-accordion-collapse</h1>
+      <hr />
+
+      <!-- Accordion -->
+      <h2>Accordion</h2>
+      <div class="accordion" id="myaccordion">
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button
+              class="accordion-button"
+              data-bs-toggle="collapse"
+              data-bs-target="#collapseOne"
+            >
+              Accordion 1
+            </button>
+          </h2>
+          <div
+            class="accordion-collapse collapse show"
+            id="collapseOne"
+            data-bs-parent="#myaccordion"
+          >
+            <div class="accordion-body">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+              Asperiores incidunt, sit, cum eveniet reprehenderit eum repellat
+              maiores, illo beatae et minus modi. Dolor vero nesciunt et! Et
+              commodi mollitia necessitatibus.
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button
+              class="accordion-button"
+              data-bs-toggle="collapse"
+              data-bs-target="#collapseTwo"
+            >
+              Accordion 2
+            </button>
+          </h2>
+          <div
+            class="accordion-collapse collapse"
+            id="collapseTwo"
+            data-bs-parent="#myaccordion"
+          >
+            <div class="accordion-body">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+              Asperiores incidunt, sit, cum eveniet reprehenderit eum repellat
+              maiores, illo beatae et minus modi. Dolor vero nesciunt et! Et
+              commodi mollitia necessitatibus.
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button
+              class="accordion-button"
+              data-bs-toggle="collapse"
+              data-bs-target="#collapseThree"
+            >
+              Accordion 3
+            </button>
+          </h2>
+          <div
+            class="accordion-collapse collapse"
+            id="collapseThree"
+            data-bs-parent="#myaccordion"
+          >
+            <div class="accordion-body">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+              Asperiores incidunt, sit, cum eveniet reprehenderit eum repellat
+              maiores, illo beatae et minus modi. Dolor vero nesciunt et! Et
+              commodi mollitia necessitatibus.
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <br />
+
+      <!-- Collapse -->
+      <h2>Collapse</h2>
+      <div class="my-3">
+        <button
+          class="btn btn-primary"
+          data-bs-toggle="collapse"
+          data-bs-target="#mycontent"
+        >
+          Show Content
+        </button>
+      </div>
+
+      <div class="collapse" id="mycontent">
+        <div class="card">
+          <div class="card-body">
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Adipisci
+            pariatur deleniti exercitationem consequatur cupiditate quas sunt
+            possimus libero accusantium doloribus laudantium sapiente laborum
+            velit illo itaque voluptate, dolore assumenda? Vel.
+          </div>
+        </div>
+      </div>
+
+      <!-- Do not type past here (except scripts) -->
+    </div>
+    <div style="margin-top: 250px"></div>
+
+    <script src="../assets/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>

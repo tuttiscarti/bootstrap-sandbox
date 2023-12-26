@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../assets/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="../assets/css/breakpoints.css" />
+    <title>2100-bootstrap-grid-columns | Bootstrap Sandbox</title>
+  </head>
+  <body>
+    <div class="container">
+      <h1 class="mb-3">2100-bootstrap-grid-columns</h1>
+      <hr />
+
+      <!-- There are 12 column slices available. -->
+
+      <!-- Basic Grid Layout -->
+      <h2 class="my-4">Basic Grid Layout</h2>
+      <div class="row">
+        <div class="col bg-light border">1 of 2</div>
+        <div class="col bg-light border">2 of 2</div>
+      </div>
+      <div class="row">
+        <div class="col bg-light border">1 of 3</div>
+        <div class="col bg-light border">2 of 3</div>
+        <div class="col bg-light border">3 of 3</div>
+      </div>
+
+      <!-- Column Sizes -->
+      <h2 class="my-4">Column Sizes</h2>
+      <div class="row">
+        <div class="col-6 bg-light border">1 of 2</div>
+        <div class="col-6 bg-light border">2 of 2</div>
+      </div>
+      <div class="row">
+        <div class="col-4 bg-light border">1 of 2</div>
+        <div class="col-8 bg-light border">2 of 2</div>
+      </div>
+
+      <!-- Responsive Grid -->
+      <h2 class="my-4">Responsive Grid</h2>
+      <div class="row">
+        <div class="col-md-6 text-bg-secondary border">1 of 2</div>
+        <div class="col-md-6 text-bg-secondary border">2 of 2</div>
+      </div>
+      <div class="row">
+        <div class="col-sm-6 col-lg-3 bg-light border">1 of 4</div>
+        <div class="col-sm-6 col-lg-3 bg-light border">2 of 4</div>
+        <div class="col-sm-6 col-lg-3 bg-light border">3 of 4</div>
+        <div class="col-sm-6 col-lg-3 bg-light border">4 of 4</div>
+      </div>
+
+      <!-- Row Cols -->
+      <h2 class="my-4">Row Cols</h2>
+      <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3">
+        <div class="col bg-light border">Column</div>
+        <div class="col bg-light border">Column</div>
+        <div class="col bg-light border">Column</div>
+        <div class="col bg-light border">Column</div>
+        <div class="col bg-light border">Column</div>
+        <div class="col bg-light border">Column</div>
+        <div class="col bg-light border">Column</div>
+        <div class="col bg-light border">Column</div>
+        <div class="col bg-light border">Column</div>
+        <div class="col bg-light border">Column</div>
+      </div>
+
+      <!-- Nesting -->
+      <h2 class="my-4">Nesting</h2>
+      <div class="row">
+        <div class="col bg-light border pb-3">Column</div>
+        <div class="col bg-light border pb-3">Column</div>
+        <div class="col bg-light border pb-3">
+          <div class="row">
+            <div class="col text-bg-secondary border">Nested</div>
+            <div class="col text-bg-secondary border">Nested</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Gutters -->
+      <h2 class="my-4">Gutters</h2>
+      <div class="row g-3">
+        <div class="col-md-4">
+          <div class="p-3 text-bg-primary">Content Item</div>
+        </div>
+        <div class="col-md-4">
+          <div class="p-3 text-bg-primary">Content Item</div>
+        </div>
+        <div class="col-md-4">
+          <div class="p-3 text-bg-primary">Content Item</div>
+        </div>
+      </div>
+
+      <!-- Offsetting Columns -->
+      <h2 class="my-4">Offsetting Columns</h2>
+      <div class="row">
+        <div class="col-md-4 offset-4">
+          <div class="p-3 text-bg-primary">Content Item</div>
+        </div>
+        <div class="col-md-4">
+          <div class="p-3 text-bg-primary">Content Item</div>
+        </div>
+      </div>
+      <div class="row p-3">
+        <div class="col-md-6 offset-3 text-bg-primary">
+          Content with offset of 3
+        </div>
+      </div>
+
+      <!-- Ordering -->
+      <h2 class="my-4">Ordering</h2>
+      <div class="row">
+        <div class="col bg-light border order-2">Column 1</div>
+        <div class="col bg-light border order-4">Column 2</div>
+        <div class="col bg-light border order-1">Column 3</div>
+        <div class="col bg-light border order-3">Column 4</div>
+      </div>
+
+      <!-- Do not type past here (except scripts) -->
+    </div>
+    <div style="margin-top: 250px"></div>
+
+    <script src="../assets/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>

@@ -1,0 +1,49 @@
+/* 
+Breakpoints (in pixels):
+    Extra small (xsm):       <  576 (default)
+    Small (sm):              >= 576
+    Medium (md):             >= 768
+    Large (lg):              >= 992
+    Extra large (xl):        >= 1200
+    Extra extra large (xxl): >= 1400   
+*/
+
+/* 'xsm' (default) applies to extra-small devices (portrait phones, less than 576px) */
+body {
+  background: Yellow;
+}
+
+/* 'sm' applies to small devices (portrait phones, more than 576px) */
+@media (min-width: 576px) {
+  body {
+    background: Gold;
+  }
+}
+
+/* 'md' applies to medium devices (landscape phones, more than 768px) */
+@media (min-width: 768px) {
+  body {
+    background: Khaki;
+  }
+}
+
+/* 'lg' applies to large devices (tablets, more than 992px) */
+@media (min-width: 992px) {
+  body {
+    background: Moccasin;
+  }
+}
+
+/* 'xl' applies to extra-large devices (desktops, more than 1200px) */
+@media (min-width: 1200px) {
+  body {
+    background: Gainsboro;
+  }
+}
+
+/* 'xxl' applies to extra-extra-large devices (large desktops, more than 1400px) */
+@media (min-width: 1400px) {
+  body {
+    background: White;
+  }
+}

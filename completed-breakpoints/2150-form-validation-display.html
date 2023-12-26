@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../assets/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="../assets/css/breakpoints.css" />
+    <title>2150-form-validation-display | Bootstrap Sandbox</title>
+  </head>
+  <body>
+    <div class="container">
+      <h1 class="mb-3">2150-form-validation-display</h1>
+      <hr />
+
+      <form novalidate class="needs-validation">
+        <div class="mb-3">
+          <label for="username" class="form-label">Username</label>
+          <input type="text" class="form-control" id="username" required />
+          <div class="valid-feedback">Looks good</div>
+          <div class="invalid-feedback">Please provide a name</div>
+        </div>
+        <div class="mb-3">
+          <label for="email" class="form-label">Email address</label>
+          <input type="email" class="form-control" id="email" required />
+          <div class="valid-feedback">Looks good</div>
+          <div class="invalid-feedback">Please provide a valid email</div>
+        </div>
+        <div class="mb-3">
+          <label for="city" class="form-label">City</label>
+          <input type="text" class="form-control" id="city" required />
+          <div class="valid-feedback">Looks good</div>
+          <div class="invalid-feedback">Please provide a city</div>
+        </div>
+
+        <div class="mb-3">
+          <div class="form-check">
+            <input
+              class="form-check-input"
+              type="checkbox"
+              value=""
+              id="invalidCheck"
+              required
+            />
+            <label class="form-check-label" for="invalidCheck">
+              Agree to terms and conditions
+            </label>
+            <div class="invalid-feedback">You must agrre to the term</div>
+          </div>
+        </div>
+
+        <input type="submit" class="btn btn-primary" value="Submit" />
+      </form>
+
+      <!-- Do not type past here (except scripts) -->
+    </div>
+    <div style="margin-top: 250px"></div>
+
+    <script src="../assets/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Custom validation script -->
+    <script>
+      const form = document.querySelector(".needs-validation");
+      form.addEventListener("submit", (e) => {
+        if (!form.checkValidity()) {
+          e.preventDefault();
+        } else {
+          alert("success");
+        }
+        form.classList.add("was-validated");
+      });
+    </script>
+  </body>
+</html>
