@@ -1,56 +1,60 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="../assets/css/bootstrap.min.css" />
-    <link rel="stylesheet" href="../assets/css/breakpoints.css" />
-    <title>2260-modals | Bootstrap Sandbox</title>
-  </head>
-  <body>
-    <div class="container">
-      <h1 class="mb-3">2260-modals</h1>
-      <hr />
 
-      <!-- Modal -->
-      <h2>Modal</h2>
-      <button
-        type="button"
-        class="btn btn-primary"
-        data-bs-toggle="modal"
-        data-bs-target="#myModal"
-      >
-        Open Modal
-      </button>
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="../assets/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="../assets/css/breakpoints.css" />
+  <title>2260-modals | Bootstrap Sandbox</title>
+</head>
 
-      <div class="modal fade" id="myModal">
-        <div class="modal-dialog">
-          <div class="modal-content">
-            <div class="modal-header">
-              <h1 class="modal-title fs-5" id="myModalLabel">Modal Title</h1>
-              <button class="btn-close" data-bs-dismiss></button>
-            </div>
-            <div class="modal-body">
-              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ullam
-              inventore eos odit cum repellendus eaque, animi laboriosam dicta.
-              Reprehenderit et hic aliquam magni repellendus laboriosam in
-              consectetur voluptates id sequi?
-            </div>
-            <div class="modal-footer">
-              <button class="btn btn-primary">Save Changes</button>
-              <button class="btn btn-secondary" data-bs-dismiss="modal">
-                Close
-              </button>
-            </div>
+<body>
+  <div class="m-3">
+    <h1>2260-modals</h1>
+    <span class="d-sm-none"><strong>Extra small</strong> (xsm, &lt;576px, portrait phones)</span>
+    <span class="d-none d-sm-inline d-md-none"><strong>Small</strong> (sm, 576px - 767px, portrait phones)</span>
+    <span class="d-none d-md-inline d-lg-none"><strong>Middle</strong> (md, 768px - 991px, landscape phones)</span>
+    <span class="d-none d-lg-inline d-xl-none"><strong>Large</strong> (lg, 992px - 1199px, tablets)</span>
+    <span class="d-none d-xl-inline d-xxl-none"><strong>Extra large</strong> (xl, 1200px - 1399 px, desktops)</span>
+    <span class="d-none d-xxl-inline"><strong>Extra extra large</strong> (xxl, &gt;1400px, large desktops)</span>
+    <hr />
+
+    <!-- Modal -->
+    <h2>Modal</h2>
+    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#myModal">
+      Open Modal
+    </button>
+
+    <div class="modal fade" id="myModal">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title fs-5" id="myModalLabel">Modal Title</h1>
+            <button class="btn-close" data-bs-dismiss></button>
+          </div>
+          <div class="modal-body">
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ullam
+            inventore eos odit cum repellendus eaque, animi laboriosam dicta.
+            Reprehenderit et hic aliquam magni repellendus laboriosam in
+            consectetur voluptates id sequi?
+          </div>
+          <div class="modal-footer">
+            <button class="btn btn-primary">Save Changes</button>
+            <button class="btn btn-secondary" data-bs-dismiss="modal">
+              Close
+            </button>
           </div>
         </div>
       </div>
-
-      <!-- Do not type past here -->
     </div>
-    <div style="margin-top: 250px"></div>
 
-    <script src="../assets/js/bootstrap.bundle.min.js"></script>
-  </body>
+    <!-- Do not type past here -->
+  </div>
+  <div style="margin-top: 250px"></div>
+
+  <script src="../assets/js/bootstrap.bundle.min.js"></script>
+</body>
+
 </html>

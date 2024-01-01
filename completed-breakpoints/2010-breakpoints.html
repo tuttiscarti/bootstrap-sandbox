@@ -1,36 +1,89 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="../assets/css/bootstrap.min.css" />
-    <link rel="stylesheet" href="../assets/css/breakpoints.css" />
-    <title>2010-breakpoints | Bootstrap Sandbox</title>
-  </head>
-  <body>
-    <div class="container">
-      <h1 class="mb-3">2010-breakpoints</h1>
-      <hr />
 
-      <div class="container vstack gap-0">
-        <span>Notes:</span>
-        <span>&lt;576px = Extra small (xsm)(default)</span>
-        <span>>=576px = Small (sm)</span>
-        <span>>=768px = Medium (md)</span>
-        <span>>=992px = Large (lg)</span>
-        <span>>=1200px = Extra large (xl)</span>
-        <span>>=1400px = Extra extra large (xxl)</span>
-      </div>
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="../assets/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="../assets/css/breakpoints.css" />
+  <title>2010-breakpoints | Bootstrap Sandbox</title>
+</head>
 
-      <div class="container mt-3">
-        <p>See '/assets/css/breakpoints.css'</p>
-      </div>
+<body>
+  <div class="m-3">
+    <h1>2010-breakpoints</h1>
+    <span class="d-sm-none"><strong>Extra small</strong> (xsm, &lt;576px, portrait phones)</span>
+    <span class="d-none d-sm-inline d-md-none"><strong>Small</strong> (sm, 576px - 767px, portrait phones)</span>
+    <span class="d-none d-md-inline d-lg-none"><strong>Middle</strong> (md, 768px - 991px, landscape phones)</span>
+    <span class="d-none d-lg-inline d-xl-none"><strong>Large</strong> (lg, 992px - 1199px, tablets)</span>
+    <span class="d-none d-xl-inline d-xxl-none"><strong>Extra large</strong> (xl, 1200px - 1399 px, desktops)</span>
+    <span class="d-none d-xxl-inline"><strong>Extra extra large</strong> (xxl, &gt;1400px, large desktops)</span>
+    <hr />
 
-      <!-- Do not type past here (except scripts) -->
-    </div>
-    <div style="margin-top: 250px"></div>
+    <table class="table table-striped">
+      <thead>
+        <tr>
+          <th scope="col" class="text-bg-secondary">Range</th>
+          <th scope="col" class="text-bg-secondary">Code</th>
+          <th scope="col" class="text-bg-secondary">Min</th>
+          <th scope="col" class="text-bg-secondary">Max</th>
+          <th scope="col" class="text-bg-secondary">Remarks</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <th scope="row">Extra small</th>
+          <td>xsm</td>
+          <td>-</td>
+          <td>575</td>
+          <td>portrait phones (default)</td>
+        </tr>
+        <tr>
+          <th scope="row">Small</th>
+          <td>sm</td>
+          <td>576</td>
+          <td>767</td>
+          <td>portrait phones</td>
+        </tr>
+        <tr>
+          <th scope="row">Middle</th>
+          <td>md</td>
+          <td>768</td>
+          <td>991</td>
+          <td>landscape phones</td>
+        </tr>
+        <tr>
+          <th scope="row">Large</th>
+          <td>lg</td>
+          <td>992</td>
+          <td>1199</td>
+          <td>tablets</td>
+        </tr>
+        <tr>
+          <th scope="row">Extra large</th>
+          <td>xl</td>
+          <td>1200</td>
+          <td>1399</td>
+          <td>desktops</td>
+        </tr>
+        <tr>
+          <th scope="row">Extra extra large</th>
+          <td>xsm</td>
+          <td>1400</td>
+          <td>-</td>
+          <td>large desktops</td>
+        </tr>
+      </tbody>
+    </table>
 
-    <script src="../assets/js/bootstrap.bundle.min.js"></script>
-  </body>
+    <p>Page body styling - see '/assets/css/breakpoints.css'</p>
+
+    <!-- Do not type past here (except scripts) -->
+  </div>
+  <div style="margin-top: 250px"></div>
+
+  <script src="../assets/js/bootstrap.bundle.min.js"></script>
+</body>
+
 </html>

@@ -1,142 +1,129 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="../assets/css/bootstrap.min.css" />
-    <link rel="stylesheet" href="../assets/css/breakpoints.css" />
-    <title>2140-forms-input | Bootstrap Sandbox</title>
-  </head>
-  <body>
-    <div class="container">
-      <h1 class="mb-3">2140-forms-input</h1>
-      <hr />
 
-      <!-- Basic Form -->
-      <h2>Basic Form</h2>
-      <form>
-        <div class="mb-3">
-          <label for="email" class="form-label">Email Address</label>
-          <input type="email" class="form-control" />
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="../assets/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="../assets/css/breakpoints.css" />
+  <title>2140-forms-input | Bootstrap Sandbox</title>
+</head>
+
+<body>
+  <div class="m-3">
+    <h1>2140-forms-input</h1>
+    <span class="d-sm-none"><strong>Extra small</strong> (xsm, &lt;576px, portrait phones)</span>
+    <span class="d-none d-sm-inline d-md-none"><strong>Small</strong> (sm, 576px - 767px, portrait phones)</span>
+    <span class="d-none d-md-inline d-lg-none"><strong>Middle</strong> (md, 768px - 991px, landscape phones)</span>
+    <span class="d-none d-lg-inline d-xl-none"><strong>Large</strong> (lg, 992px - 1199px, tablets)</span>
+    <span class="d-none d-xl-inline d-xxl-none"><strong>Extra large</strong> (xl, 1200px - 1399 px, desktops)</span>
+    <span class="d-none d-xxl-inline"><strong>Extra extra large</strong> (xxl, &gt;1400px, large desktops)</span>
+    <hr />
+
+    <!-- Basic Form -->
+    <h2>Basic Form</h2>
+    <form>
+      <div class="mb-3">
+        <label for="email" class="form-label">Email Address</label>
+        <input type="email" class="form-control" />
+      </div>
+      <div class="mb-3">
+        <label for="password" class="form-label">Password</label>
+        <input type="password" class="form-control" />
+      </div>
+      <div class="mb-3">
+        <input type="checkbox" class="form-check-input" id="remember" />
+        <label for="remember" class="form-check-label">Remember Me</label>
+      </div>
+      <input type="submit" value="Login" class="btn btn-primary" />
+    </form>
+
+    <br />
+
+    <!-- Other Fields -->
+    <h2>Other Fields</h2>
+    <form>
+      <!-- Select Fields -->
+      <div class="mb-3">
+        <select class="form-select">
+          <option>Best time to call</option>
+          <option value="morning">Morning</option>
+          <option value="afternoon">Afternoon</option>
+          <option value="evening">Evening</option>
+        </select>
+      </div>
+
+      <!-- Textarea -->
+      <textarea class="form-control" placeholder="Message"></textarea>
+
+      <!-- Switch -->
+      <div class="form-check form-switch mt-3">
+        <input class="form-check-input" type="checkbox" />
+      </div>
+
+      <!-- Inline Checkboxes -->
+      <div class="mb-3">
+        <div class="form-check form-check-inline">
+          <input type="checkbox" class="form-check-input" id="checkbox1" value="option1" />
+          <label for="checkbox1" class="form-check-label">Option 1</label>
         </div>
-        <div class="mb-3">
-          <label for="password" class="form-label">Password</label>
-          <input type="password" class="form-control" />
+        <div class="form-check form-check-inline">
+          <input type="checkbox" class="form-check-input" id="checkbox2" value="option2" />
+          <label for="checkbox2" class="form-check-label">Option 2</label>
         </div>
-        <div class="mb-3">
-          <input type="checkbox" class="form-check-input" id="remember" />
-          <label for="remember" class="form-check-label">Remember Me</label>
+        <div class="form-check form-check-inline">
+          <input type="checkbox" class="form-check-input" id="checkbox3" value="option3" />
+          <label for="checkbox3" class="form-check-label">Option 3</label>
         </div>
-        <input type="submit" value="Login" class="btn btn-primary" />
-      </form>
+      </div>
 
-      <br />
+      <!-- Toggle Button -->
+      <div class="mb-3">
+        <input type="checkbox" class="btn-check" id="toggle" />
+        <label for="toggle" class="btn btn-primary">Toggle Button</label>
+      </div>
 
-      <!-- Other Fields -->
-      <h2>Other Fields</h2>
-      <form>
-        <!-- Select Fields -->
-        <div class="mb-3">
-          <select class="form-select">
-            <option>Best time to call</option>
-            <option value="morning">Morning</option>
-            <option value="afternoon">Afternoon</option>
-            <option value="evening">Evening</option>
-          </select>
-        </div>
+      <!-- Range Slider -->
+      <div class="mb-3">
+        <label for="slider" class="form-label"></label>
+        <input type="range" class="form-range" id="slider" />
+      </div>
 
-        <!-- Textarea -->
-        <textarea class="form-control" placeholder="Message"></textarea>
+      <!-- Range Steps -->
+      <div class="mb-3">
+        <label for="stepslider" class="form-label"></label>
+        <input type="range" class="form-range" id="stepslider" min="0" max="5" step="0.5" />
+      </div>
+    </form>
 
-        <!-- Switch -->
-        <div class="form-check form-switch mt-3">
-          <input class="form-check-input" type="checkbox" />
-        </div>
+    <br />
 
-        <!-- Inline Checkboxes -->
-        <div class="mb-3">
-          <div class="form-check form-check-inline">
-            <input
-              type="checkbox"
-              class="form-check-input"
-              id="checkbox1"
-              value="option1"
-            />
-            <label for="checkbox1" class="form-check-label">Option 1</label>
-          </div>
-          <div class="form-check form-check-inline">
-            <input
-              type="checkbox"
-              class="form-check-input"
-              id="checkbox2"
-              value="option2"
-            />
-            <label for="checkbox2" class="form-check-label">Option 2</label>
-          </div>
-          <div class="form-check form-check-inline">
-            <input
-              type="checkbox"
-              class="form-check-input"
-              id="checkbox3"
-              value="option3"
-            />
-            <label for="checkbox3" class="form-check-label">Option 3</label>
-          </div>
-        </div>
+    <!-- Input Group Span+Input -->
+    <h2>Input Group Span+Input</h2>
+    <form>
+      <div class="input-group mb-3">
+        <span class="input-group-text">@</span>
+        <input type="email" class="form-control" placeholder="Email" />
+      </div>
+    </form>
 
-        <!-- Toggle Button -->
-        <div class="mb-3">
-          <input type="checkbox" class="btn-check" id="toggle" />
-          <label for="toggle" class="btn btn-primary">Toggle Button</label>
-        </div>
+    <br />
 
-        <!-- Range Slider -->
-        <div class="mb-3">
-          <label for="slider" class="form-label"></label>
-          <input type="range" class="form-range" id="slider" />
-        </div>
+    <!-- Input Group Input+Button -->
+    <h2>Input Group Input+Button</h2>
+    <form>
+      <div class="input-group mb-3">
+        <input type="text" class="form-control" />
+        <button class="btn btn-primary">Submit</button>
+      </div>
+    </form>
 
-        <!-- Range Steps -->
-        <div class="mb-3">
-          <label for="stepslider" class="form-label"></label>
-          <input
-            type="range"
-            class="form-range"
-            id="stepslider"
-            min="0"
-            max="5"
-            step="0.5"
-          />
-        </div>
-      </form>
+    <!-- Do not type past here (except scripts) -->
+  </div>
+  <div style="margin-top: 250px"></div>
 
-      <br />
+  <script src="../assets/js/bootstrap.bundle.min.js"></script>
+</body>
 
-      <!-- Input Group Span+Input -->
-      <h2>Input Group Span+Input</h2>
-      <form>
-        <div class="input-group mb-3">
-          <span class="input-group-text">@</span>
-          <input type="email" class="form-control" placeholder="Email" />
-        </div>
-      </form>
-
-      <br />
-
-      <!-- Input Group Input+Button -->
-      <h2>Input Group Input+Button</h2>
-      <form>
-        <div class="input-group mb-3">
-          <input type="text" class="form-control" />
-          <button class="btn btn-primary">Submit</button>
-        </div>
-      </form>
-
-      <!-- Do not type past here (except scripts) -->
-    </div>
-    <div style="margin-top: 250px"></div>
-
-    <script src="../assets/js/bootstrap.bundle.min.js"></script>
-  </body>
 </html>

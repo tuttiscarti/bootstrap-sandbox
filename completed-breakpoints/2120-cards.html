@@ -1,51 +1,124 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="../assets/css/bootstrap.min.css" />
-    <link rel="stylesheet" href="../assets/css/breakpoints.css" />
-    <title>2120-cards | Bootstrap Sandbox</title>
-  </head>
-  <body>
-    <div class="container">
-      <h1 class="mb-3">2120-cards</h1>
-      <hr />
 
-      <!-- Basic Text Card -->
-      <h2 class="my-4">Basic Text Card</h2>
-      <div class="card" style="width: 25rem">
-        <div class="card-body">
-          <h5 class="card-title">Card Title</h5>
-          <p class="card-text">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate
-            sit praesentium tenetur debitis suscipit fuga inventore explicabo
-            cumque aspernatur eius.
-          </p>
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="../assets/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="../assets/css/breakpoints.css" />
+  <title>2120-cards | Bootstrap Sandbox</title>
+</head>
+
+<body>
+  <div class="m-3">
+    <h1>2120-cards</h1>
+    <span class="d-sm-none"><strong>Extra small</strong> (xsm, &lt;576px, portrait phones)</span>
+    <span class="d-none d-sm-inline d-md-none"><strong>Small</strong> (sm, 576px - 767px, portrait phones)</span>
+    <span class="d-none d-md-inline d-lg-none"><strong>Middle</strong> (md, 768px - 991px, landscape phones)</span>
+    <span class="d-none d-lg-inline d-xl-none"><strong>Large</strong> (lg, 992px - 1199px, tablets)</span>
+    <span class="d-none d-xl-inline d-xxl-none"><strong>Extra large</strong> (xl, 1200px - 1399 px, desktops)</span>
+    <span class="d-none d-xxl-inline"><strong>Extra extra large</strong> (xxl, &gt;1400px, large desktops)</span>
+    <hr />
+
+    <!-- Basic Text Card -->
+    <h2 class="my-4">Basic Text Card</h2>
+    <div class="card" style="width: 25rem">
+      <div class="card-body">
+        <h5 class="card-title">Card Title</h5>
+        <p class="card-text">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate
+          sit praesentium tenetur debitis suscipit fuga inventore explicabo
+          cumque aspernatur eius.
+        </p>
+      </div>
+    </div>
+
+    <!-- Card with Image -->
+    <h2 class="my-4">Card with Image</h2>
+    <div class="card" style="width: 25rem">
+      <img src="https://picsum.photos/200/100" alt="Card Image" class="card-img-top" />
+      <div class="card-body">
+        <h5 class="card-title">Card Title</h5>
+        <p class="card-text">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate
+          sit praesentium tenetur debitis suscipit fuga inventore explicabo
+          cumque aspernatur eius.
+        </p>
+      </div>
+    </div>
+
+    <!-- Header and Footer -->
+    <h2 class="my-4">Header and Footer</h2>
+    <div class="card" style="width: 25rem">
+      <div class="card-header">Card Header</div>
+      <div class="card-body">
+        <h5 class="card-title">Card Title</h5>
+        <p class="card-text">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate
+          sit praesentium tenetur debitis suscipit fuga inventore explicabo
+          cumque aspernatur eius.
+        </p>
+      </div>
+      <div class="card-footer">Card Footer</div>
+    </div>
+
+    <!-- Grid Columns and Colors -->
+    <h2 class="my-4">Grid Columns and Colors</h2>
+    <div class="row">
+      <div class="col-md-3">
+        <div class="card text-bg-primary">
+          <div class="card-body">
+            <h5 class="card-title">Card Title</h5>
+            <p class="card-text">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Voluptate sit praesentium tenetur debitis suscipit fuga
+              inventore explicabo cumque aspernatur eius.
+            </p>
+          </div>
         </div>
       </div>
-
-      <!-- Card with Image -->
-      <h2 class="my-4">Card with Image</h2>
-      <div class="card" style="width: 25rem">
-        <img
-          src="https://picsum.photos/200/100"
-          alt="Card Image"
-          class="card-img-top"
-        />
-        <div class="card-body">
-          <h5 class="card-title">Card Title</h5>
-          <p class="card-text">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate
-            sit praesentium tenetur debitis suscipit fuga inventore explicabo
-            cumque aspernatur eius.
-          </p>
+      <div class="col-md-3">
+        <div class="card text-bg-danger">
+          <div class="card-body">
+            <h5 class="card-title">Card Title</h5>
+            <p class="card-text">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Voluptate sit praesentium tenetur debitis suscipit fuga
+              inventore explicabo cumque aspernatur eius.
+            </p>
+          </div>
         </div>
       </div>
+      <div class="col-md-3">
+        <div class="card text-bg-dark">
+          <div class="card-body">
+            <h5 class="card-title">Card Title</h5>
+            <p class="card-text">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Voluptate sit praesentium tenetur debitis suscipit fuga
+              inventore explicabo cumque aspernatur eius.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-3">
+        <div class="card text-bg-warning">
+          <div class="card-body">
+            <h5 class="card-title">Card Title</h5>
+            <p class="card-text">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Voluptate sit praesentium tenetur debitis suscipit fuga
+              inventore explicabo cumque aspernatur eius.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
 
-      <!-- Header and Footer -->
-      <h2 class="my-4">Header and Footer</h2>
+    <!-- Card Group -->
+    <h2 class="my-4">Card Group</h2>
+    <div class="card-group">
       <div class="card" style="width: 25rem">
         <div class="card-header">Card Header</div>
         <div class="card-body">
@@ -58,123 +131,55 @@
         </div>
         <div class="card-footer">Card Footer</div>
       </div>
-
-      <!-- Grid Columns and Colors -->
-      <h2 class="my-4">Grid Columns and Colors</h2>
-      <div class="row">
-        <div class="col-md-3">
-          <div class="card text-bg-primary">
-            <div class="card-body">
-              <h5 class="card-title">Card Title</h5>
-              <p class="card-text">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Voluptate sit praesentium tenetur debitis suscipit fuga
-                inventore explicabo cumque aspernatur eius.
-              </p>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-3">
-          <div class="card text-bg-danger">
-            <div class="card-body">
-              <h5 class="card-title">Card Title</h5>
-              <p class="card-text">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Voluptate sit praesentium tenetur debitis suscipit fuga
-                inventore explicabo cumque aspernatur eius.
-              </p>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-3">
-          <div class="card text-bg-dark">
-            <div class="card-body">
-              <h5 class="card-title">Card Title</h5>
-              <p class="card-text">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Voluptate sit praesentium tenetur debitis suscipit fuga
-                inventore explicabo cumque aspernatur eius.
-              </p>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-3">
-          <div class="card text-bg-warning">
-            <div class="card-body">
-              <h5 class="card-title">Card Title</h5>
-              <p class="card-text">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Voluptate sit praesentium tenetur debitis suscipit fuga
-                inventore explicabo cumque aspernatur eius.
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <!-- Card Group -->
-      <h2 class="my-4">Card Group</h2>
-      <div class="card-group">
-        <div class="card" style="width: 25rem">
-          <div class="card-header">Card Header</div>
-          <div class="card-body">
-            <h5 class="card-title">Card Title</h5>
-            <p class="card-text">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate
-              sit praesentium tenetur debitis suscipit fuga inventore explicabo
-              cumque aspernatur eius.
-            </p>
-          </div>
-          <div class="card-footer">Card Footer</div>
-        </div>
-        <div class="card" style="width: 25rem">
-          <div class="card-header">Card Header</div>
-          <div class="card-body">
-            <h5 class="card-title">Card Title</h5>
-            <p class="card-text">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate
-              sit praesentium tenetur debitis suscipit fuga inventore explicabo
-              cumque aspernatur eius.
-            </p>
-          </div>
-          <div class="card-footer">Card Footer</div>
-        </div>
-        <div class="card" style="width: 25rem">
-          <div class="card-header">Card Header</div>
-          <div class="card-body">
-            <h5 class="card-title">Card Title</h5>
-            <p class="card-text">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate
-              sit praesentium tenetur debitis suscipit fuga inventore explicabo
-              cumque aspernatur eius.
-            </p>
-          </div>
-          <div class="card-footer">Card Footer</div>
-        </div>
-      </div>
-
-      <!-- Placeholders -->
-      <h2 class="my-4">Placeholders</h2>
-      <div class="card" style="width: 18rem">
+      <div class="card" style="width: 25rem">
+        <div class="card-header">Card Header</div>
         <div class="card-body">
-          <h5 class="card-title placeholder-glow">
-            <span class="placeholder col-6"></span>
-          </h5>
-          <p class="card-text placeholder-glow">
-            <span class="placeholder col-7"></span>
-            <span class="placeholder col-4"></span>
-            <span class="placeholder col-4"></span>
-            <span class="placeholder col-6"></span>
-            <span class="placeholder col-8"></span>
+          <h5 class="card-title">Card Title</h5>
+          <p class="card-text">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate
+            sit praesentium tenetur debitis suscipit fuga inventore explicabo
+            cumque aspernatur eius.
           </p>
-          <a href="#" class="btn btn-primary disabled placeholder col-6"></a>
         </div>
+        <div class="card-footer">Card Footer</div>
       </div>
-
-      <!-- Do not type past here (except scripts) -->
+      <div class="card" style="width: 25rem">
+        <div class="card-header">Card Header</div>
+        <div class="card-body">
+          <h5 class="card-title">Card Title</h5>
+          <p class="card-text">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate
+            sit praesentium tenetur debitis suscipit fuga inventore explicabo
+            cumque aspernatur eius.
+          </p>
+        </div>
+        <div class="card-footer">Card Footer</div>
+      </div>
     </div>
-    <div style="margin-top: 250px"></div>
 
-    <script src="../assets/js/bootstrap.bundle.min.js"></script>
-  </body>
+    <!-- Placeholders -->
+    <h2 class="my-4">Placeholders</h2>
+    <div class="card" style="width: 18rem">
+      <div class="card-body">
+        <h5 class="card-title placeholder-glow">
+          <span class="placeholder col-6"></span>
+        </h5>
+        <p class="card-text placeholder-glow">
+          <span class="placeholder col-7"></span>
+          <span class="placeholder col-4"></span>
+          <span class="placeholder col-4"></span>
+          <span class="placeholder col-6"></span>
+          <span class="placeholder col-8"></span>
+        </p>
+        <a href="#" class="btn btn-primary disabled placeholder col-6"></a>
+      </div>
+    </div>
+
+    <!-- Do not type past here (except scripts) -->
+  </div>
+  <div style="margin-top: 250px"></div>
+
+  <script src="../assets/js/bootstrap.bundle.min.js"></script>
+</body>
+
 </html>

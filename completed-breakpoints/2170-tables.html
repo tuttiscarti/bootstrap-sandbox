@@ -1,220 +1,229 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="../assets/css/bootstrap.min.css" />
-    <link rel="stylesheet" href="../assets/css/breakpoints.css" />
-    <title>2170-tables | Bootstrap Sandbox</title>
-  </head>
-  <body>
-    <div class="container">
-      <h1 class="mb-3">2170-tables</h1>
-      <hr />
 
-      <!-- Basic Table -->
-      <h2>Basic Table</h2>
-      <table class="table">
-        <thead>
-          <tr>
-            <th>#</th>
-            <th>Name</th>
-            <th>Email</th>
-            <th>Position</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <th>1</th>
-            <td>Tony Stark</td>
-            <td>ironman@gmail.com</td>
-            <td>Senior Web Developer</td>
-          </tr>
-          <tr>
-            <th>2</th>
-            <td>Steve Rogers</td>
-            <td>captain@gmail.com</td>
-            <td>UI Designer</td>
-          </tr>
-          <tr>
-            <th>3</th>
-            <td>Bruce Banner</td>
-            <td>hulk@gmail.com</td>
-            <td>Junior Web Developer</td>
-          </tr>
-        </tbody>
-      </table>
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="../assets/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="../assets/css/breakpoints.css" />
+  <title>2170-tables | Bootstrap Sandbox</title>
+</head>
 
-      <!-- Colored -->
-      <h2>Colored</h2>
-      <table class="table table-dark">
-        <thead>
-          <tr>
-            <th>#</th>
-            <th>Name</th>
-            <th>Email</th>
-            <th>Position</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr class="table-danger">
-            <th>1</th>
-            <td>Tony Stark</td>
-            <td class="table-warning">ironman@gmail.com</td>
-            <td>Senior Web Developer</td>
-          </tr>
-          <tr>
-            <th>2</th>
-            <td>Steve Rogers</td>
-            <td>captain@gmail.com</td>
-            <td>UI Designer</td>
-          </tr>
-          <tr>
-            <th>3</th>
-            <td>Bruce Banner</td>
-            <td>hulk@gmail.com</td>
-            <td>Junior Web Developer</td>
-          </tr>
-        </tbody>
-      </table>
+<body>
+  <div class="m-3">
+    <h1>2170-tables</h1>
+    <span class="d-sm-none"><strong>Extra small</strong> (xsm, &lt;576px, portrait phones)</span>
+    <span class="d-none d-sm-inline d-md-none"><strong>Small</strong> (sm, 576px - 767px, portrait phones)</span>
+    <span class="d-none d-md-inline d-lg-none"><strong>Middle</strong> (md, 768px - 991px, landscape phones)</span>
+    <span class="d-none d-lg-inline d-xl-none"><strong>Large</strong> (lg, 992px - 1199px, tablets)</span>
+    <span class="d-none d-xl-inline d-xxl-none"><strong>Extra large</strong> (xl, 1200px - 1399 px, desktops)</span>
+    <span class="d-none d-xxl-inline"><strong>Extra extra large</strong> (xxl, &gt;1400px, large desktops)</span>
+    <hr />
 
-      <!-- Striped -->
-      <h2>Striped</h2>
-      <table class="table table-striped">
-        <thead>
-          <tr>
-            <th>#</th>
-            <th>Name</th>
-            <th>Email</th>
-            <th>Position</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <th>1</th>
-            <td>Tony Stark</td>
-            <td>ironman@gmail.com</td>
-            <td>Senior Web Developer</td>
-          </tr>
-          <tr>
-            <th>2</th>
-            <td>Steve Rogers</td>
-            <td>captain@gmail.com</td>
-            <td>UI Designer</td>
-          </tr>
-          <tr>
-            <th>3</th>
-            <td>Bruce Banner</td>
-            <td>hulk@gmail.com</td>
-            <td>Junior Web Developer</td>
-          </tr>
-        </tbody>
-      </table>
+    <!-- Basic Table -->
+    <h2>Basic Table</h2>
+    <table class="table">
+      <thead>
+        <tr>
+          <th>#</th>
+          <th>Name</th>
+          <th>Email</th>
+          <th>Position</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <th>1</th>
+          <td>Tony Stark</td>
+          <td>ironman@gmail.com</td>
+          <td>Senior Web Developer</td>
+        </tr>
+        <tr>
+          <th>2</th>
+          <td>Steve Rogers</td>
+          <td>captain@gmail.com</td>
+          <td>UI Designer</td>
+        </tr>
+        <tr>
+          <th>3</th>
+          <td>Bruce Banner</td>
+          <td>hulk@gmail.com</td>
+          <td>Junior Web Developer</td>
+        </tr>
+      </tbody>
+    </table>
 
-      <!-- Hoverable Rows -->
-      <h2>Hoverable Rows</h2>
-      <table class="table table-hover">
-        <thead>
-          <tr>
-            <th>#</th>
-            <th>Name</th>
-            <th>Email</th>
-            <th>Position</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <th>1</th>
-            <td>Tony Stark</td>
-            <td>ironman@gmail.com</td>
-            <td>Senior Web Developer</td>
-          </tr>
-          <tr>
-            <th>2</th>
-            <td>Steve Rogers</td>
-            <td>captain@gmail.com</td>
-            <td>UI Designer</td>
-          </tr>
-          <tr>
-            <th>3</th>
-            <td>Bruce Banner</td>
-            <td>hulk@gmail.com</td>
-            <td>Junior Web Developer</td>
-          </tr>
-        </tbody>
-      </table>
+    <!-- Colored -->
+    <h2>Colored</h2>
+    <table class="table table-dark">
+      <thead>
+        <tr>
+          <th>#</th>
+          <th>Name</th>
+          <th>Email</th>
+          <th>Position</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr class="table-danger">
+          <th>1</th>
+          <td>Tony Stark</td>
+          <td class="table-warning">ironman@gmail.com</td>
+          <td>Senior Web Developer</td>
+        </tr>
+        <tr>
+          <th>2</th>
+          <td>Steve Rogers</td>
+          <td>captain@gmail.com</td>
+          <td>UI Designer</td>
+        </tr>
+        <tr>
+          <th>3</th>
+          <td>Bruce Banner</td>
+          <td>hulk@gmail.com</td>
+          <td>Junior Web Developer</td>
+        </tr>
+      </tbody>
+    </table>
 
-      <!-- Bordered -->
-      <h2>Bordered</h2>
-      <table class="table table-bordered">
-        <thead>
-          <tr>
-            <th>#</th>
-            <th>Name</th>
-            <th>Email</th>
-            <th>Position</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <th>1</th>
-            <td>Tony Stark</td>
-            <td>ironman@gmail.com</td>
-            <td>Senior Web Developer</td>
-          </tr>
-          <tr>
-            <th>2</th>
-            <td>Steve Rogers</td>
-            <td>captain@gmail.com</td>
-            <td>UI Designer</td>
-          </tr>
-          <tr>
-            <th>3</th>
-            <td>Bruce Banner</td>
-            <td>hulk@gmail.com</td>
-            <td>Junior Web Developer</td>
-          </tr>
-        </tbody>
-      </table>
+    <!-- Striped -->
+    <h2>Striped</h2>
+    <table class="table table-striped">
+      <thead>
+        <tr>
+          <th>#</th>
+          <th>Name</th>
+          <th>Email</th>
+          <th>Position</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <th>1</th>
+          <td>Tony Stark</td>
+          <td>ironman@gmail.com</td>
+          <td>Senior Web Developer</td>
+        </tr>
+        <tr>
+          <th>2</th>
+          <td>Steve Rogers</td>
+          <td>captain@gmail.com</td>
+          <td>UI Designer</td>
+        </tr>
+        <tr>
+          <th>3</th>
+          <td>Bruce Banner</td>
+          <td>hulk@gmail.com</td>
+          <td>Junior Web Developer</td>
+        </tr>
+      </tbody>
+    </table>
 
-      <!-- Borderless -->
-      <h2>Borderless</h2>
-      <table class="table table-borderless">
-        <thead>
-          <tr>
-            <th>#</th>
-            <th>Name</th>
-            <th>Email</th>
-            <th>Position</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <th>1</th>
-            <td>Tony Stark</td>
-            <td>ironman@gmail.com</td>
-            <td>Senior Web Developer</td>
-          </tr>
-          <tr>
-            <th>2</th>
-            <td>Steve Rogers</td>
-            <td>captain@gmail.com</td>
-            <td>UI Designer</td>
-          </tr>
-          <tr>
-            <th>3</th>
-            <td>Bruce Banner</td>
-            <td>hulk@gmail.com</td>
-            <td>Junior Web Developer</td>
-          </tr>
-        </tbody>
-      </table>
+    <!-- Hoverable Rows -->
+    <h2>Hoverable Rows</h2>
+    <table class="table table-hover">
+      <thead>
+        <tr>
+          <th>#</th>
+          <th>Name</th>
+          <th>Email</th>
+          <th>Position</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <th>1</th>
+          <td>Tony Stark</td>
+          <td>ironman@gmail.com</td>
+          <td>Senior Web Developer</td>
+        </tr>
+        <tr>
+          <th>2</th>
+          <td>Steve Rogers</td>
+          <td>captain@gmail.com</td>
+          <td>UI Designer</td>
+        </tr>
+        <tr>
+          <th>3</th>
+          <td>Bruce Banner</td>
+          <td>hulk@gmail.com</td>
+          <td>Junior Web Developer</td>
+        </tr>
+      </tbody>
+    </table>
 
-      <!-- Do not type past here (except scripts) -->
-    </div>
-    <div style="margin-top: 250px"></div>
+    <!-- Bordered -->
+    <h2>Bordered</h2>
+    <table class="table table-bordered">
+      <thead>
+        <tr>
+          <th>#</th>
+          <th>Name</th>
+          <th>Email</th>
+          <th>Position</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <th>1</th>
+          <td>Tony Stark</td>
+          <td>ironman@gmail.com</td>
+          <td>Senior Web Developer</td>
+        </tr>
+        <tr>
+          <th>2</th>
+          <td>Steve Rogers</td>
+          <td>captain@gmail.com</td>
+          <td>UI Designer</td>
+        </tr>
+        <tr>
+          <th>3</th>
+          <td>Bruce Banner</td>
+          <td>hulk@gmail.com</td>
+          <td>Junior Web Developer</td>
+        </tr>
+      </tbody>
+    </table>
 
-    <script src="../assets/js/bootstrap.bundle.min.js"></script>
-  </body>
+    <!-- Borderless -->
+    <h2>Borderless</h2>
+    <table class="table table-borderless">
+      <thead>
+        <tr>
+          <th>#</th>
+          <th>Name</th>
+          <th>Email</th>
+          <th>Position</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <th>1</th>
+          <td>Tony Stark</td>
+          <td>ironman@gmail.com</td>
+          <td>Senior Web Developer</td>
+        </tr>
+        <tr>
+          <th>2</th>
+          <td>Steve Rogers</td>
+          <td>captain@gmail.com</td>
+          <td>UI Designer</td>
+        </tr>
+        <tr>
+          <th>3</th>
+          <td>Bruce Banner</td>
+          <td>hulk@gmail.com</td>
+          <td>Junior Web Developer</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <!-- Do not type past here (except scripts) -->
+  </div>
+  <div style="margin-top: 250px"></div>
+
+  <script src="../assets/js/bootstrap.bundle.min.js"></script>
+</body>
+
 </html>

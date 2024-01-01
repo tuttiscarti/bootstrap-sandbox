@@ -8,42 +8,42 @@ Breakpoints (in pixels):
     Extra extra large (xxl): >= 1400   
 */
 
-/* 'xsm' (default) applies to extra-small devices (portrait phones, less than 576px) */
+/* 'xsm' (default) applies to extra-small devices (less than 576px, portrait phones) */
 body {
   background: Yellow;
 }
 
-/* 'sm' applies to small devices (portrait phones, more than 576px) */
+/* 'sm' applies to small devices (576px - 767px, portrait phones) */
 @media (min-width: 576px) {
   body {
     background: Gold;
   }
 }
 
-/* 'md' applies to medium devices (landscape phones, more than 768px) */
+/* 'md' applies to medium devices (768px - 991px, landscape phones) */
 @media (min-width: 768px) {
   body {
     background: Khaki;
   }
 }
 
-/* 'lg' applies to large devices (tablets, more than 992px) */
+/* 'lg' applies to large devices (992px - 1199px, tablets) */
 @media (min-width: 992px) {
+  body {
+    background: White;
+  }
+}
+
+/* 'xl' applies to extra-large devices (1200px - 1399 px, desktops) */
+@media (min-width: 1200px) {
   body {
     background: Moccasin;
   }
 }
 
-/* 'xl' applies to extra-large devices (desktops, more than 1200px) */
-@media (min-width: 1200px) {
-  body {
-    background: Gainsboro;
-  }
-}
-
-/* 'xxl' applies to extra-extra-large devices (large desktops, more than 1400px) */
+/* 'xxl' applies to extra-extra-large devices (more than 1400px, large desktops) */
 @media (min-width: 1400px) {
   body {
-    background: White;
+    background: Gainsboro;
   }
 }

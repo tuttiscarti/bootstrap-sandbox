@@ -1,97 +1,76 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="../assets/css/bootstrap.min.css" />
-    <link rel="stylesheet" href="../assets/css/breakpoints.css" />
-    <title>2230-carousel | Bootstrap Sandbox</title>
-  </head>
-  <body>
-    <div class="container">
-      <h1 class="mb-3">2230-carousel</h1>
-      <hr />
 
-      <!-- Carousel -->
-      <h2>Carousel</h2>
-      <div class="carousel slide" id="slider">
-        <!-- Indicators -->
-        <div class="carousel-indicators">
-          <button
-            class="active"
-            data-bs-slide-to="0"
-            data-bs-target="#slider"
-          ></button>
-          <button data-bs-slide-to="1" data-bs-target="#slider"></button>
-          <button data-bs-slide-to="2" data-bs-target="#slider"></button>
-        </div>
-        <div class="carousel-inner">
-          <div class="carousel-item active">
-            <img
-              src="/assets/images/image-one-300x100.jpg"
-              alt="image one"
-              class="d-block w-100"
-            />
-            <div
-              class="carousel-caption d-none d-md-block bg-primary opacity-50"
-            >
-              <h5>Responsice Caption 1</h5>
-              <p>Lorem ipsum dolor sit amet.</p>
-            </div>
-          </div>
-          <div class="carousel-item">
-            <img
-              src="/assets/images/image-two-300x100.jpg"
-              alt="image two"
-              class="d-block w-100"
-            />
-            <div
-              class="carousel-caption d-none d-md-block bg-primary opacity-50"
-            >
-              <h5>Responsice Caption 2</h5>
-              <p>Lorem ipsum dolor sit amet.</p>
-            </div>
-          </div>
-          <div class="carousel-item">
-            <img
-              src="/assets/images/image-three-300x100.jpg"
-              alt="image three"
-              class="d-block w-100"
-            />
-            <div
-              class="carousel-caption d-none d-md-block bg-primary opacity-50"
-            >
-              <h5>Responsice Caption 3</h5>
-              <p>Lorem ipsum dolor sit amet.</p>
-            </div>
-          </div>
-        </div>
-        <!-- Buttons -->
-        <button
-          class="carousel-control-prev"
-          data-bs-slide="prev"
-          data-bs-target="#slider"
-        >
-          <span class="carousel-control-prev-icon"></span>
-          <span class="visually-hidden">Previous</span>
-        </button>
-        <button
-          class="carousel-control-next"
-          data-bs-slide="next"
-          data-bs-target="#slider"
-        >
-          <span class="carousel-control-next-icon"></span>
-          <span class="visually-hidden">Next</span>
-        </button>
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="../assets/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="../assets/css/breakpoints.css" />
+  <title>2230-carousel | Bootstrap Sandbox</title>
+</head>
+
+<body>
+  <div class="m-3">
+    <h1>2230-carousel</h1>
+    <span class="d-sm-none"><strong>Extra small</strong> (xsm, &lt;576px, portrait phones)</span>
+    <span class="d-none d-sm-inline d-md-none"><strong>Small</strong> (sm, 576px - 767px, portrait phones)</span>
+    <span class="d-none d-md-inline d-lg-none"><strong>Middle</strong> (md, 768px - 991px, landscape phones)</span>
+    <span class="d-none d-lg-inline d-xl-none"><strong>Large</strong> (lg, 992px - 1199px, tablets)</span>
+    <span class="d-none d-xl-inline d-xxl-none"><strong>Extra large</strong> (xl, 1200px - 1399 px, desktops)</span>
+    <span class="d-none d-xxl-inline"><strong>Extra extra large</strong> (xxl, &gt;1400px, large desktops)</span>
+    <hr />
+
+    <!-- Carousel -->
+    <h2>Carousel</h2>
+    <div class="carousel slide" id="slider">
+      <!-- Indicators -->
+      <div class="carousel-indicators">
+        <button class="active" data-bs-slide-to="0" data-bs-target="#slider"></button>
+        <button data-bs-slide-to="1" data-bs-target="#slider"></button>
+        <button data-bs-slide-to="2" data-bs-target="#slider"></button>
       </div>
-
-      <hr />
-
-      <!-- Do not type past here (except scripts) -->
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="/assets/images/image-one-300x100.jpg" alt="image one" class="d-block w-100" />
+          <div class="carousel-caption d-none d-md-block bg-primary opacity-50">
+            <h5>Responsice Caption 1</h5>
+            <p>Lorem ipsum dolor sit amet.</p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="/assets/images/image-two-300x100.jpg" alt="image two" class="d-block w-100" />
+          <div class="carousel-caption d-none d-md-block bg-primary opacity-50">
+            <h5>Responsice Caption 2</h5>
+            <p>Lorem ipsum dolor sit amet.</p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="/assets/images/image-three-300x100.jpg" alt="image three" class="d-block w-100" />
+          <div class="carousel-caption d-none d-md-block bg-primary opacity-50">
+            <h5>Responsice Caption 3</h5>
+            <p>Lorem ipsum dolor sit amet.</p>
+          </div>
+        </div>
+      </div>
+      <!-- Buttons -->
+      <button class="carousel-control-prev" data-bs-slide="prev" data-bs-target="#slider">
+        <span class="carousel-control-prev-icon"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" data-bs-slide="next" data-bs-target="#slider">
+        <span class="carousel-control-next-icon"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
     </div>
-    <div style="margin-top: 250px"></div>
 
-    <script src="../assets/js/bootstrap.bundle.min.js"></script>
-  </body>
+    <hr />
+
+    <!-- Do not type past here (except scripts) -->
+  </div>
+  <div style="margin-top: 250px"></div>
+
+  <script src="../assets/js/bootstrap.bundle.min.js"></script>
+</body>
+
 </html>

@@ -1,97 +1,102 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="../assets/css/bootstrap.min.css" />
-    <link rel="stylesheet" href="../assets/css/breakpoints.css" />
-    <title>2250-spinners | Bootstrap Sandbox</title>
-  </head>
-  <body>
-    <div class="container">
-      <h1 class="mb-3">2250-spinners</h1>
-      <hr />
 
-      <!-- Border Spinner -->
-      <h2>Border Spinner</h2>
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="../assets/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="../assets/css/breakpoints.css" />
+  <title>2250-spinners | Bootstrap Sandbox</title>
+</head>
+
+<body>
+  <div class="m-3">
+    <h1>2250-spinners</h1>
+    <span class="d-sm-none"><strong>Extra small</strong> (xsm, &lt;576px, portrait phones)</span>
+    <span class="d-none d-sm-inline d-md-none"><strong>Small</strong> (sm, 576px - 767px, portrait phones)</span>
+    <span class="d-none d-md-inline d-lg-none"><strong>Middle</strong> (md, 768px - 991px, landscape phones)</span>
+    <span class="d-none d-lg-inline d-xl-none"><strong>Large</strong> (lg, 992px - 1199px, tablets)</span>
+    <span class="d-none d-xl-inline d-xxl-none"><strong>Extra large</strong> (xl, 1200px - 1399 px, desktops)</span>
+    <span class="d-none d-xxl-inline"><strong>Extra extra large</strong> (xxl, &gt;1400px, large desktops)</span>
+    <hr />
+
+    <!-- Border Spinner -->
+    <h2>Border Spinner</h2>
+    <div class="spinner-border" role="status">
+      <span class="visually-hidden"></span>
+    </div>
+
+    <br /><br />
+
+    <!-- Colors -->
+    <h2>Colors</h2>
+    <div class="spinner-border text-primary" role="status">
+      <span class="visually-hidden"></span>
+    </div>
+    <div class="spinner-border text-secondary" role="status">
+      <span class="visually-hidden"></span>
+    </div>
+    <div class="spinner-border text-success" role="status">
+      <span class="visually-hidden"></span>
+    </div>
+    <div class="spinner-border text-danger" role="status">
+      <span class="visually-hidden"></span>
+    </div>
+    <div class="spinner-border text-warning" role="status">
+      <span class="visually-hidden"></span>
+    </div>
+    <div class="spinner-border text-info" role="status">
+      <span class="visually-hidden"></span>
+    </div>
+    <div class="spinner-border text-light bg-dark" role="status">
+      <span class="visually-hidden"></span>
+    </div>
+    <div class="spinner-border text-dark" role="status">
+      <span class="visually-hidden"></span>
+    </div>
+
+    <br /><br />
+
+    <!-- Growing Spinner -->
+    <h2>Growing Spinner</h2>
+    <div class="spinner-grow" role="status">
+      <span class="visually-hidden"></span>
+    </div>
+
+    <br /><br />
+
+    <!-- Align Center -->
+    <h2>Align Center</h2>
+    <div class="d-flex justify-content-center">
       <div class="spinner-border" role="status">
         <span class="visually-hidden"></span>
       </div>
-
-      <br /><br />
-
-      <!-- Colors -->
-      <h2>Colors</h2>
-      <div class="spinner-border text-primary" role="status">
-        <span class="visually-hidden"></span>
-      </div>
-      <div class="spinner-border text-secondary" role="status">
-        <span class="visually-hidden"></span>
-      </div>
-      <div class="spinner-border text-success" role="status">
-        <span class="visually-hidden"></span>
-      </div>
-      <div class="spinner-border text-danger" role="status">
-        <span class="visually-hidden"></span>
-      </div>
-      <div class="spinner-border text-warning" role="status">
-        <span class="visually-hidden"></span>
-      </div>
-      <div class="spinner-border text-info" role="status">
-        <span class="visually-hidden"></span>
-      </div>
-      <div class="spinner-border text-light bg-dark" role="status">
-        <span class="visually-hidden"></span>
-      </div>
-      <div class="spinner-border text-dark" role="status">
-        <span class="visually-hidden"></span>
-      </div>
-
-      <br /><br />
-
-      <!-- Growing Spinner -->
-      <h2>Growing Spinner</h2>
-      <div class="spinner-grow" role="status">
-        <span class="visually-hidden"></span>
-      </div>
-
-      <br /><br />
-
-      <!-- Align Center -->
-      <h2>Align Center</h2>
-      <div class="d-flex justify-content-center">
-        <div class="spinner-border" role="status">
-          <span class="visually-hidden"></span>
-        </div>
-      </div>
-
-      <!-- Size -->
-      <h2>Size</h2>
-      <div class="spinner-border spinner-border-sm" role="status">
-        <span class="visually-hidden"></span>
-      </div>
-      <div
-        class="spinner-border"
-        role="status"
-        style="height: 3rem; width: 3rem"
-      >
-        <span class="visually-hidden"></span>
-      </div>
-
-      <br /><br />
-
-      <!-- In Buttons -->
-      <h2>In Buttons</h2>
-      <button class="btn btn-primary">
-        <span class="spinner-border spinner-border-sm"></span>
-        Loading...
-      </button>
-
-      <!-- Do not type past here -->
     </div>
-    <div style="margin-top: 250px"></div>
 
-    <script src="../assets/js/bootstrap.bundle.min.js"></script>
-  </body>
+    <!-- Size -->
+    <h2>Size</h2>
+    <div class="spinner-border spinner-border-sm" role="status">
+      <span class="visually-hidden"></span>
+    </div>
+    <div class="spinner-border" role="status" style="height: 3rem; width: 3rem">
+      <span class="visually-hidden"></span>
+    </div>
+
+    <br /><br />
+
+    <!-- In Buttons -->
+    <h2>In Buttons</h2>
+    <button class="btn btn-primary">
+      <span class="spinner-border spinner-border-sm"></span>
+      Loading...
+    </button>
+
+    <!-- Do not type past here -->
+  </div>
+  <div style="margin-top: 250px"></div>
+
+  <script src="../assets/js/bootstrap.bundle.min.js"></script>
+</body>
+
 </html>

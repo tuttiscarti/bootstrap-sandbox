@@ -1,130 +1,139 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="../assets/css/bootstrap.min.css" />
-    <link rel="stylesheet" href="../assets/css/breakpoints.css" />
-    <title>2110-flexbox | Bootstrap Sandbox</title>
-  </head>
-  <body>
-    <div class="container">
-      <h1 class="mb-3">2110-flexbox</h1>
-      <hr />
 
-      <!-- Basic Flexbox -->
-      <h2 class="my-4">Basic Flexbox</h2>
-      <div class="d-flex">
-        <div class="text-bg-secondary p-3 border">Flex Item</div>
-        <div class="text-bg-secondary p-3 border">Flex Item</div>
-        <div class="text-bg-secondary p-3 border">Flex Item</div>
-        <div class="text-bg-secondary p-3 border">Flex Item</div>
-        <div class="text-bg-secondary p-3 border">Flex Item</div>
-        <div class="text-bg-secondary p-3 border">Flex Item</div>
-      </div>
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="../assets/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="../assets/css/breakpoints.css" />
+  <title>2110-flexbox | Bootstrap Sandbox</title>
+</head>
 
-      <!-- Flex Column -->
-      <h2 class="my-4">Flex Column</h2>
-      <div class="d-flex flex-column">
-        <div class="text-bg-secondary p-3 border">Flex Item</div>
-        <div class="text-bg-secondary p-3 border">Flex Item</div>
-        <div class="text-bg-secondary p-3 border">Flex Item</div>
-        <div class="text-bg-secondary p-3 border">Flex Item</div>
-        <div class="text-bg-secondary p-3 border">Flex Item</div>
-        <div class="text-bg-secondary p-3 border">Flex Item</div>
-      </div>
+<body>
+  <div class="m-3">
+    <h1>2110-flexbox</h1>
+    <span class="d-sm-none"><strong>Extra small</strong> (xsm, &lt;576px, portrait phones)</span>
+    <span class="d-none d-sm-inline d-md-none"><strong>Small</strong> (sm, 576px - 767px, portrait phones)</span>
+    <span class="d-none d-md-inline d-lg-none"><strong>Middle</strong> (md, 768px - 991px, landscape phones)</span>
+    <span class="d-none d-lg-inline d-xl-none"><strong>Large</strong> (lg, 992px - 1199px, tablets)</span>
+    <span class="d-none d-xl-inline d-xxl-none"><strong>Extra large</strong> (xl, 1200px - 1399 px, desktops)</span>
+    <span class="d-none d-xxl-inline"><strong>Extra extra large</strong> (xxl, &gt;1400px, large desktops)</span>
+    <hr />
 
-      <!-- Column/Row at breakpoints -->
-      <h2 class="my-4">Column/Row at breakpoints</h2>
-      <div class="d-flex flex-column flex-md-row">
-        <div class="text-bg-secondary p-3 border">Flex Item</div>
-        <div class="text-bg-secondary p-3 border">Flex Item</div>
-        <div class="text-bg-secondary p-3 border">Flex Item</div>
-        <div class="text-bg-secondary p-3 border">Flex Item</div>
-        <div class="text-bg-secondary p-3 border">Flex Item</div>
-        <div class="text-bg-secondary p-3 border">Flex Item</div>
-      </div>
-
-      <!-- Flex Wrap -->
-      <h2 class="my-4">Flex Wrap</h2>
-      <div class="d-flex flex-wrap">
-        <div class="text-bg-secondary p-3 border">Flex Item</div>
-        <div class="text-bg-secondary p-3 border">Flex Item</div>
-        <div class="text-bg-secondary p-3 border">Flex Item</div>
-        <div class="text-bg-secondary p-3 border">Flex Item</div>
-        <div class="text-bg-secondary p-3 border">Flex Item</div>
-        <div class="text-bg-secondary p-3 border">Flex Item</div>
-        <div class="text-bg-secondary p-3 border">Flex Item</div>
-        <div class="text-bg-secondary p-3 border">Flex Item</div>
-        <div class="text-bg-secondary p-3 border">Flex Item</div>
-        <div class="text-bg-secondary p-3 border">Flex Item</div>
-      </div>
-
-      <!-- Justify Content End -->
-      <h2 class="my-4">Justify Content End</h2>
-      <div class="d-flex justify-content-end">
-        <div class="text-bg-secondary p-3 border">Flex Item</div>
-        <div class="text-bg-secondary p-3 border">Flex Item</div>
-        <div class="text-bg-secondary p-3 border">Flex Item</div>
-      </div>
-
-      <!-- Justify Content Around -->
-      <h2 class="my-4">Justify Content Around</h2>
-      <div class="d-flex justify-content-lg-around">
-        <div class="text-bg-secondary p-3 border">Flex Item</div>
-        <div class="text-bg-secondary p-3 border">Flex Item</div>
-        <div class="text-bg-secondary p-3 border">Flex Item</div>
-      </div>
-
-      <!-- Justify Content Between -->
-      <h2 class="my-4">Justify Content Between</h2>
-      <div class="d-flex justify-content-between">
-        <div class="text-bg-secondary p-3 border">Flex Item</div>
-        <div class="text-bg-secondary p-3 border">Flex Item</div>
-        <div class="text-bg-secondary p-3 border">Flex Item</div>
-      </div>
-
-      <!-- Align Items End -->
-      <h2 class="my-4">Align Items End</h2>
-      <div class="d-flex flex-column align-items-end" style="height: 200px">
-        <div class="text-bg-secondary p-3 border">Flex Item</div>
-        <div class="text-bg-secondary p-3 border">Flex Item</div>
-        <div class="text-bg-secondary p-3 border">Flex Item</div>
-      </div>
-
-      <!-- Align Items Center -->
-      <h2 class="my-4">Align Items Center</h2>
-      <div class="d-flex flex-column align-items-center" style="height: 200px">
-        <div class="text-bg-secondary p-3 border">Flex Item</div>
-        <div class="text-bg-secondary p-3 border">Flex Item</div>
-        <div class="text-bg-secondary p-3 border">Flex Item</div>
-      </div>
-
-      <!-- Align Self -->
-      <h2 class="my-4">Align Self</h2>
-      <div class="d-flex flex-column" style="height: 200px">
-        <div class="text-bg-secondary p-3 border">Flex Item</div>
-        <div class="text-bg-secondary p-3 border align-self-center">
-          Flex Item
-        </div>
-        <div class="text-bg-secondary p-3 border align-self-end">Flex Item</div>
-      </div>
-
-      <!-- Flex Grow -->
-      <h2 class="my-4">Flex Grow</h2>
-      <div class="d-flex">
-        <div class="text-bg-primary p-3 border flex-grow-1">
-          Growing Flex Item
-        </div>
-        <div class="text-bg-secondary border p-3">Flex Item</div>
-        <div class="text-bg-secondary border p-3">Flex Item</div>
-      </div>
-
-      <!-- Do not type past here (except scripts) -->
+    <!-- Basic Flexbox -->
+    <h2 class="my-4">Basic Flexbox</h2>
+    <div class="d-flex">
+      <div class="text-bg-secondary p-3 border">Flex Item</div>
+      <div class="text-bg-secondary p-3 border">Flex Item</div>
+      <div class="text-bg-secondary p-3 border">Flex Item</div>
+      <div class="text-bg-secondary p-3 border">Flex Item</div>
+      <div class="text-bg-secondary p-3 border">Flex Item</div>
+      <div class="text-bg-secondary p-3 border">Flex Item</div>
     </div>
-    <div style="margin-top: 250px"></div>
 
-    <script src="../assets/js/bootstrap.bundle.min.js"></script>
-  </body>
+    <!-- Flex Column -->
+    <h2 class="my-4">Flex Column</h2>
+    <div class="d-flex flex-column">
+      <div class="text-bg-secondary p-3 border">Flex Item</div>
+      <div class="text-bg-secondary p-3 border">Flex Item</div>
+      <div class="text-bg-secondary p-3 border">Flex Item</div>
+      <div class="text-bg-secondary p-3 border">Flex Item</div>
+      <div class="text-bg-secondary p-3 border">Flex Item</div>
+      <div class="text-bg-secondary p-3 border">Flex Item</div>
+    </div>
+
+    <!-- Column/Row at breakpoints -->
+    <h2 class="my-4">Column/Row at breakpoints</h2>
+    <div class="d-flex flex-column flex-md-row">
+      <div class="text-bg-secondary p-3 border">Flex Item</div>
+      <div class="text-bg-secondary p-3 border">Flex Item</div>
+      <div class="text-bg-secondary p-3 border">Flex Item</div>
+      <div class="text-bg-secondary p-3 border">Flex Item</div>
+      <div class="text-bg-secondary p-3 border">Flex Item</div>
+      <div class="text-bg-secondary p-3 border">Flex Item</div>
+    </div>
+
+    <!-- Flex Wrap -->
+    <h2 class="my-4">Flex Wrap</h2>
+    <div class="d-flex flex-wrap">
+      <div class="text-bg-secondary p-3 border">Flex Item</div>
+      <div class="text-bg-secondary p-3 border">Flex Item</div>
+      <div class="text-bg-secondary p-3 border">Flex Item</div>
+      <div class="text-bg-secondary p-3 border">Flex Item</div>
+      <div class="text-bg-secondary p-3 border">Flex Item</div>
+      <div class="text-bg-secondary p-3 border">Flex Item</div>
+      <div class="text-bg-secondary p-3 border">Flex Item</div>
+      <div class="text-bg-secondary p-3 border">Flex Item</div>
+      <div class="text-bg-secondary p-3 border">Flex Item</div>
+      <div class="text-bg-secondary p-3 border">Flex Item</div>
+    </div>
+
+    <!-- Justify Content End -->
+    <h2 class="my-4">Justify Content End</h2>
+    <div class="d-flex justify-content-end">
+      <div class="text-bg-secondary p-3 border">Flex Item</div>
+      <div class="text-bg-secondary p-3 border">Flex Item</div>
+      <div class="text-bg-secondary p-3 border">Flex Item</div>
+    </div>
+
+    <!-- Justify Content Around -->
+    <h2 class="my-4">Justify Content Around</h2>
+    <div class="d-flex justify-content-lg-around">
+      <div class="text-bg-secondary p-3 border">Flex Item</div>
+      <div class="text-bg-secondary p-3 border">Flex Item</div>
+      <div class="text-bg-secondary p-3 border">Flex Item</div>
+    </div>
+
+    <!-- Justify Content Between -->
+    <h2 class="my-4">Justify Content Between</h2>
+    <div class="d-flex justify-content-between">
+      <div class="text-bg-secondary p-3 border">Flex Item</div>
+      <div class="text-bg-secondary p-3 border">Flex Item</div>
+      <div class="text-bg-secondary p-3 border">Flex Item</div>
+    </div>
+
+    <!-- Align Items End -->
+    <h2 class="my-4">Align Items End</h2>
+    <div class="d-flex flex-column align-items-end" style="height: 200px">
+      <div class="text-bg-secondary p-3 border">Flex Item</div>
+      <div class="text-bg-secondary p-3 border">Flex Item</div>
+      <div class="text-bg-secondary p-3 border">Flex Item</div>
+    </div>
+
+    <!-- Align Items Center -->
+    <h2 class="my-4">Align Items Center</h2>
+    <div class="d-flex flex-column align-items-center" style="height: 200px">
+      <div class="text-bg-secondary p-3 border">Flex Item</div>
+      <div class="text-bg-secondary p-3 border">Flex Item</div>
+      <div class="text-bg-secondary p-3 border">Flex Item</div>
+    </div>
+
+    <!-- Align Self -->
+    <h2 class="my-4">Align Self</h2>
+    <div class="d-flex flex-column" style="height: 200px">
+      <div class="text-bg-secondary p-3 border">Flex Item</div>
+      <div class="text-bg-secondary p-3 border align-self-center">
+        Flex Item
+      </div>
+      <div class="text-bg-secondary p-3 border align-self-end">Flex Item</div>
+    </div>
+
+    <!-- Flex Grow -->
+    <h2 class="my-4">Flex Grow</h2>
+    <div class="d-flex">
+      <div class="text-bg-primary p-3 border flex-grow-1">
+        Growing Flex Item
+      </div>
+      <div class="text-bg-secondary border p-3">Flex Item</div>
+      <div class="text-bg-secondary border p-3">Flex Item</div>
+    </div>
+
+    <!-- Do not type past here (except scripts) -->
+  </div>
+  <div style="margin-top: 250px"></div>
+
+  <script src="../assets/js/bootstrap.bundle.min.js"></script>
+</body>
+
 </html>

@@ -1,53 +1,58 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="../assets/css/bootstrap.min.css" />
-    <!-- <link rel="stylesheet" href="../assets/css/breakpoints.css" /> -->
-    <title>2280-darkmode-toggle | Bootstrap Sandbox</title>
-  </head>
-  <body>
-    <div class="container">
-      <h1 class="mb-3">2280-darkmode-toggle</h1>
-      <hr />
 
-      <div class="container vstack gap-0">
-        <span>Notes:</span>
-        <span
-          >This page doesn't use the script '/assets/css/breakpoints.css'.</span
-        >
-        <span
-          >This page requires an additional script
-          '/assets/js/darkmodetoggle.js' (from Bootstrap documentation).</span
-        >
-      </div>
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="../assets/css/bootstrap.min.css" />
+  <!-- <link rel="stylesheet" href="../assets/css/breakpoints.css" /> -->
+  <title>2280-darkmode-toggle | Bootstrap Sandbox</title>
+</head>
 
-      <hr />
+<body>
+  <div class="m-3">
+    <h1>2280-darkmode-toggle</h1>
+    <span class="d-sm-none"><strong>Extra small</strong> (xsm, &lt;576px, portrait phones)</span>
+    <span class="d-none d-sm-inline d-md-none"><strong>Small</strong> (sm, 576px - 767px, portrait phones)</span>
+    <span class="d-none d-md-inline d-lg-none"><strong>Middle</strong> (md, 768px - 991px, landscape phones)</span>
+    <span class="d-none d-lg-inline d-xl-none"><strong>Large</strong> (lg, 992px - 1199px, tablets)</span>
+    <span class="d-none d-xl-inline d-xxl-none"><strong>Extra large</strong> (xl, 1200px - 1399 px, desktops)</span>
+    <span class="d-none d-xxl-inline"><strong>Extra extra large</strong> (xxl, &gt;1400px, large desktops)</span>
+    <hr />
 
-      <!-- Toggle Dark Mode -->
-      <h2>Toggle Dark Mode</h2>
-      <div class="card mb-4" style="width: 18rem">
-        <div class="card-header">This is a card</div>
-        <div class="card-body">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam eius
-          adipisci iste aspernatur aut ducimus est libero doloribus consectetur
-          magni!
-        </div>
-      </div>
-      <button class="btn btn-dark" data-bs-theme-value="dark">
-        Enable Dark Mode
-      </button>
-      <button class="btn btn-light" data-bs-theme-value="light">
-        Enable Light Mode
-      </button>
-
-      <!-- Do not type past here -->
+    <div class="vstack gap-0">
+      <span>Notes:</span>
+      <span>This page doesn't use the script '/assets/css/breakpoints.css'.</span>
+      <span>Theme toggle requires the additional script
+        '/assets/js/darkmodetoggle.js' (from Bootstrap documentation).</span>
     </div>
-    <div style="margin-top: 250px"></div>
 
-    <script src="../assets/js/bootstrap.bundle.min.js"></script>
-    <script src="/assets/js/darkmodetoggle.js"></script>
-  </body>
+    <hr />
+
+    <!-- Toggle Dark Mode -->
+    <h2>Toggle Dark Mode</h2>
+    <div class="card mb-4" style="width: 18rem">
+      <div class="card-header">This is a card</div>
+      <div class="card-body">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam eius
+        adipisci iste aspernatur aut ducimus est libero doloribus consectetur
+        magni!
+      </div>
+    </div>
+    <button class="btn btn-dark" data-bs-theme-value="dark">
+      Enable Dark Mode
+    </button>
+    <button class="btn btn-light" data-bs-theme-value="light">
+      Enable Light Mode
+    </button>
+
+    <!-- Do not type past here -->
+  </div>
+  <div style="margin-top: 250px"></div>
+
+  <script src="../assets/js/bootstrap.bundle.min.js"></script>
+  <script src="/assets/js/darkmodetoggle.js"></script>
+</body>
+
 </html>
