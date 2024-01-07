@@ -6,7 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="stylesheet" href="../assets/css/bootstrap.min.css" />
-  <link rel="stylesheet" href="../assets/css/breakpoints.css" />
+  <link rel="stylesheet" href="../assets/css/breakpoint-clues.css" />
   <title>2010-breakpoints | Bootstrap Sandbox</title>
 </head>
 
@@ -21,14 +21,17 @@
     <span class="d-none d-xxl-inline"><strong>Extra extra large</strong> (xxl, &gt;1400px, large desktops)</span>
     <hr />
 
-    <table class="table table-striped">
+    <h2>Breakpoint Clues</h2>
+
+    <table class="table mt-3">
       <thead>
         <tr>
-          <th scope="col" class="text-bg-secondary">Range</th>
-          <th scope="col" class="text-bg-secondary">Code</th>
+          <th scope="col" class="text-bg-secondary">Breakpoint</th>
+          <th scope="col" class="text-bg-secondary">Infix</th>
           <th scope="col" class="text-bg-secondary">Min</th>
           <th scope="col" class="text-bg-secondary">Max</th>
-          <th scope="col" class="text-bg-secondary">Remarks</th>
+          <th scope="col" class="text-bg-secondary">Clue</th>
+          <th scope="col" class="text-bg-secondary">Remark</th>
         </tr>
       </thead>
       <tbody>
@@ -37,6 +40,7 @@
           <td>xsm</td>
           <td>-</td>
           <td>575</td>
+          <td class="bpclue-xsm-bg-color">Yellow</td>
           <td>portrait phones (default)</td>
         </tr>
         <tr>
@@ -44,6 +48,7 @@
           <td>sm</td>
           <td>576</td>
           <td>767</td>
+          <td class="bpclue-sm-bg-color">Gold</td>
           <td>portrait phones</td>
         </tr>
         <tr>
@@ -51,6 +56,7 @@
           <td>md</td>
           <td>768</td>
           <td>991</td>
+          <td  class="bpclue-md-bg-color">Khaki</td>
           <td>landscape phones</td>
         </tr>
         <tr>
@@ -58,6 +64,7 @@
           <td>lg</td>
           <td>992</td>
           <td>1199</td>
+          <td  class="bpclue-lg-bg-color">White</td>
           <td>tablets</td>
         </tr>
         <tr>
@@ -65,6 +72,7 @@
           <td>xl</td>
           <td>1200</td>
           <td>1399</td>
+          <td class="bpclue-xl-bg-color">Lavender</td>
           <td>desktops</td>
         </tr>
         <tr>
@@ -72,12 +80,13 @@
           <td>xsm</td>
           <td>1400</td>
           <td>-</td>
+          <td class="bpclue-xxl-bg-color">Thistle</td>
           <td>large desktops</td>
         </tr>
       </tbody>
     </table>
 
-    <p>Page body styling - see '/assets/css/breakpoints.css'</p>
+    <p>Breakpoint clues styling is in <strong>/assets/css/breakpoint-clues.css</strong>.</p>
 
     <!-- Do not type past here (except scripts) -->
   </div>
