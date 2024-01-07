@@ -1,5 +1,9 @@
 # CHANGELOG
 
+## Release 2024.01.1
+
+Improved breakpoint clues.
+
 ## Release 2024.01
 
 Improved `completed-breakpoints` pages.
